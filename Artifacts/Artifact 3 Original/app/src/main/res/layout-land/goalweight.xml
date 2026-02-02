@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/goalWeight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp"
+    tools:context=".GoalWeightActivity">
+
+    <!-- Left panel -->
+    <LinearLayout
+        android:id="@+id/leftPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightPanel"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/textViewGoalUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_label"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewGoalWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal Weight"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Right panel -->
+    <LinearLayout
+        android:id="@+id/rightPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/leftPanel"
+        app:layout_constraintWidth_percent="0.55"
+        android:paddingHorizontal="16dp">
+
+        <!-- Visible input field -->
+        <EditText
+            android:id="@+id/editTextGoalWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter weight"
+            android:inputType="number"
+            android:maxLength="3"
+            android:padding="12dp"
+            android:gravity="center"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Radio buttons -->
+        <RadioGroup
+            android:id="@+id/radioGroupGoalType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radioLoss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:checked="true"
+                android:text="Lose"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioGain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gain"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btnSaveGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Goal Weight"
+            android:backgroundTint="#1976D2"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:backgroundTint="#B0BEC5"
+            android:textColor="#000000"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:paddingVertical="12dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
