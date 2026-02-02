@@ -1,0 +1,3 @@
+In order for this app to work, you need an API key from Google Firebase.
+
+Download the google_services.json and place in the top level app directory (this directory)

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Weight Tracker</string>
+    <string name="user_label">User: %1$s</string>
+    <string name="settings_label">Settings</string>
+</resources>
