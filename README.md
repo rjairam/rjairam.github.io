@@ -6,3 +6,12 @@ This code review contains my three artifacts shared in this portfolio. I have ch
 
 [![Code Review video](https://img.youtube.com/vi/pE60ViIqgTE/maxresdefault.jpg)](https://youtu.be/pE60ViIqgTE)
 
+## Artifact 1
+This is the first enhancement to the Weight Tracker App. It uses Firebase authentication. 
+
+[Artifact 1 Narrative](https://github.com/rjairam/rjairam.github.io/blob/main/Artifacts/Artifact%201%20narrative%20%20Ria%20Jairam.pdf)
+
+[Artifact 1 Original](https://github.com/rjairam/rjairam.github.io/tree/main/Artifacts/Artifact%201%20Original)
+
+[Arctifact 1 Enhanced](https://github.com/rjairam/rjairam.github.io/tree/main/Artifacts/Artifact%201%20Enhanced)
+
